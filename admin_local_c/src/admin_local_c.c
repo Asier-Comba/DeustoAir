@@ -1,17 +1,8 @@
-/*
- ============================================================================
- Name        : admin_local_c.c
- Author      : 
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 
 int main(void) {
     int opcion;
+    int leido;
 
     do {
         printf("\n==============================\n");
@@ -21,23 +12,41 @@ int main(void) {
         printf("2) Registrar usuario\n");
         printf("0) Salir\n");
         printf("Opcion: ");
-        scanf("%d", &opcion);
+        fflush(stdout);
 
-        switch (opcion) {
-            case 1:
-                printf("Has elegido iniciar sesion.\n");
-                break;
-            case 2:
-                printf("Has elegido registrar usuario.\n");
-                break;
-            case 0:
-                printf("Saliendo...\n");
-                break;
-            default:
-                printf("Opcion no valida.\n");
+        leido = scanf("%d", &opcion);
+
+        if (leido != 1) {
+            printf("\n[ERROR] Entrada no valida. Debes introducir un numero.\n");
+            while (getchar() != '\n');
+            opcion = -1;
+        } else {
+            while (getchar() != '\n');
+
+            switch (opcion) {
+                case 1:
+                    printf("\nHas elegido iniciar sesion.\n");
+                    break;
+
+                case 2:
+                    printf("\nHas elegido registrar usuario.\n");
+                    break;
+
+                case 0:
+                    printf("\nSaliendo...\n");
+                    break;
+
+                default:
+                    printf("\n[ERROR] Opcion no valida.\n");
+            }
         }
+
+        if (opcion != 0) {
+            printf("\nPulsa ENTER para continuar...");
+            getchar();
+        }
+
     } while (opcion != 0);
 
     return 0;
 }
-
