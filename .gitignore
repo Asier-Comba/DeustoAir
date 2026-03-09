@@ -1,0 +1,26 @@
+# Eclipse
+.metadata/
+
+# Eclipse project settings
+**/.settings/
+
+# CDT build folders
+**/Debug/
+**/Release/
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.out
+
+# Logs
+*.log
+
+# SQLite
+*.db
+*.sqlite
+
+# OS
+.DS_Store
+Thumbs.db
