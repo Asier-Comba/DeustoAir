@@ -1,0 +1,10 @@
+[2026-03-23 22:45:52] - Hugo - Intento de login fallido
+[2026-03-23 22:46:11] - Hugo - Registro de usuario
+[2026-03-23 22:46:17] - Hugo - Inicio de sesion correcto
+[2026-03-23 22:46:46] - Hugo - Cierre de sesion
+[2026-03-23 22:47:58] - Hugo - Inicio de sesion correcto
+[2026-03-23 22:48:24] - Hugo - Cierre de sesion
+[2026-03-23 22:48:53] - admin - Inicio de sesion correcto
+[2026-03-23 22:48:57] - admin - Importacion CSV: 12 filas ok, fichero=data/datos_calidad_aire.csv
+[2026-03-23 22:49:01] - admin - Importacion CSV: 12 filas ok, fichero=data/datos_calidad_aire.csv
+[2026-03-23 22:49:26] - admin - Cierre de sesion

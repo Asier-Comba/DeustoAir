@@ -3,5 +3,6 @@
 
 void limpiarBuffer(void);
 void pausarPantalla(void);
+void limpiarPantalla(void);
 
-#endif
+#endif /* UTILS_H */
